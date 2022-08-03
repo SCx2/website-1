@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        footer {
+            flex: 0 0 content;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #b3b1b1;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            background-color: #c1bf79;
+            flex-wrap: wrap;
+            width: 70%;
+        }
+
+        /* родитель */
+
+        aside {
+            position: absolute;
+            height: 1350px;
+            width: 29%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            right: 13px;
+            /* Положение от правого края */
+        }
+
+        .main {
+            background-color: #c1bf79;
+            display: flex;
+
+            align-items: center;
+            margin: 40px auto;
+            height: 200px;
+            width: 100%;
+        }
+
+        .main1,
+        .main2,
+        .main3 {
+            background-color: #dfd92c;
+
+        }
+
+        .main1,
+        .main2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 200px;
+            width: 49%;
+
+        }
+
+        .aside {
+            background-color: rgb(84, 154, 84);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main3 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: space-between;
+            height: 200px;
+            width: 100%;
+            margin: 300px auto;
+        }
+
+        footer {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer_e {
+            background-color: beige;
+            height: 70px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>website 🥳</h1>
+    <header>
+        <p class="header">[Шапка страницы]</p>
+    </header>
+    <main>
+        <section class="main">[Основная часть]</section>
+        <p class="main1">[Ещё 1]</p>
+        <p class="main2">[Ещё 2]</p>
+        <p class="main3">[Ещё 3]</p>
+        <aside class="aside">[Боковая область]</aside>
+
+    </main>
+    <footer>
+        <p class="footer_e">[Секция футера 1]</p>
+        <p class="footer_e">[Секция футера 2]</p>
+        <p class="footer_e">[Секция футера 3]</p>
+        <p class="footer_e">[Секция футера 4]</p>
+    </footer>
+</body>
+</html>
